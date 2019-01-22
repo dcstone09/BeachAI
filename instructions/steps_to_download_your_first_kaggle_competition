@@ -1,0 +1,31 @@
+To download from kaggle the first time
+--------------------------------------
+These instructions assume you can run a bash shell. I believe the bash commands can be run
+in a jupyter notebook using '!' as the prefix (although I am not sure about the apt-get install line)
+
+A specific competition (planet-understanding-the-amazon-from-space) is presented here. This competition
+was closed, so downloading an open competition for your first download will involve slightly different
+steps. If you have already downloaded a competition, then I think there will be fewer steps.
+
+1) Get account at www.kaggle.com
+2) "sudo apt-get install python-lxml"
+3) "pip install kaggle-cli"          (if this fails due to a permission problem then just append ' --user' and retry)
+4) download a json file containing a token specific to your account
+   4a) load 'http://www.kaggle.com/<username>/account' in your browser
+   4b) click on 'Create New API Token' button
+   4c) save as file ~/.kaggle/kaggle.json
+5) "chmod 600 ~/.kaggle/kaggle.json"   (not critical but will probably prevent irritating security warning messages)
+6) accept competition rules
+   6a) load 'http://www.kaggle.com/c/planet-understanding-the-amazon-from-space/rules' in your browser
+   6b) click on 'I Understand and Accept' button
+   6c) follow the registration steps
+7) request access to closed competition
+   7a) load 'http://www.kaggle.com/c/planet-understanding-the-amazon-from-space' in your browser
+   7b) click on 'Late Submission' button that looks like a tab
+8) run the kaggle line to download the text
+   8a) load 'http://www.kaggle.com/c/planet-understanding-the-amazon-from-space/data' in your browser
+   8b) copy the 'kaggle competitions download -c planet-understanding-the-amazon-from-space' text from the API box in the
+       Data section that is almost at the bottom of the web page
+   8c) paste the 'aggle competitions download -c planet-understanding-the-amazon-from-space' text into your bash
+       shell and run it
+   8d) if you get a '404 Error' then a step above failed and you do not have permission. Just retry and watch for errors
