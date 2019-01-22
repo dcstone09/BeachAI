@@ -26,6 +26,6 @@ steps. If you have already downloaded a competition, then I think there will be 
    8a) load 'http://www.kaggle.com/c/planet-understanding-the-amazon-from-space/data' in your browser
    8b) copy the 'kaggle competitions download -c planet-understanding-the-amazon-from-space' text from the API box in the
        Data section that is almost at the bottom of the web page
-   8c) paste the 'aggle competitions download -c planet-understanding-the-amazon-from-space' text into your bash
+   8c) paste the 'kaggle competitions download -c planet-understanding-the-amazon-from-space' text into your bash
        shell and run it
    8d) if you get a '404 Error' then a step above failed and you do not have permission. Just retry and watch for errors
